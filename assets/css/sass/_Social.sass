@@ -1,0 +1,74 @@
+
+// Social
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.social-navigation
+  ul
+    display: flex
+    flex-wrap: wrap
+    justify-content: left
+
+  li
+    margin: 0
+    list-style: none
+    &:not(:last-child)
+      margin-right: 0.8rem
+
+  a
+    display: inline-block
+    width: 3.2rem
+    height: 3.2rem
+    font-size: 0
+    background-color: rgba(0,0,0,.16)
+    border-radius: 50%
+
+    &:before
+      display: block
+      color: #FFF
+      font-family: 'icons'
+      font-size: 1.6rem
+      text-align: center
+      line-height: 3.2rem
+      -webkit-font-smoothing: antialiased
+
+    &[href*="instagram.com"]
+      &:before
+        content: "\ea92"
+      &:hover
+        background-color: $color-instagram
+
+    &[href*="spotify.com"]
+      &:before
+        content: "\e903"
+      &:hover
+        background-color: $color-spotify
+
+    &[href*="twitter.com"]
+      &:before
+        content: "\e904"
+      &:hover
+        background-color: $color-twitter
+
+    &[href*="dribbble.com"]
+      &:before
+        content: "\e90a"
+      &:hover
+        background-color: $color-dribbble
+
+    &[href*="behance.net"]
+      &:before
+        content: "\e90b"
+      &:hover
+        background-color: $color-behance
+
+    &[href*="github.com"]
+      &:before
+        content: "\e90c"
+      &:hover
+        background-color: $color-github
+
+    &[href*="linkedin.com"]
+      &:before
+        content: "\e911"
+      &:hover
+        background-color: $color-linkedin

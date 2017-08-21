@@ -1,0 +1,254 @@
+
+// Variables
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+$color-border: rgba(0,0,0, 0.2)
+$color-gradient-light: #FE8C00
+$color-gradient-dark: #F83600
+$color-highlight: #FFF198
+$color-primary: rgba(0,0,0, 1)
+$color-secondary: rgba(0,0,0, 0.5)
+$color-text: #000
+$color-text-dark: rgba(0,0,0, 1)
+$color-text-light: rgba(0,0,0, 0.5)
+
+// Social Media
+$color-twitter: #55ACEE
+$color-instagram: #3F729B
+$color-spotify: #2EBD59
+$color-dribbble: #EA4C89
+$color-behance: #1769FF
+$color-github: #4183C4
+$color-linkedin: #0077B5
+
+// Sass Modules
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+@import Utility
+
+@import Base
+@import Breakpoint
+@import Button
+@import Footer
+@import Form
+@import Grid
+@import Image
+@import Link
+@import List
+@import Misc
+@import Navigation
+@import Scroll
+@import Social
+@import Spacing
+@import Table
+@import Typography
+
+.svg-wrap
+  position: absolute
+  top: 0
+  bottom: auto
+
+// Column
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.right-column
+  +medium
+    padding-top: 16rem
+
+// The Digital Jungle
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+#the-digital-jungle
+  font-family: 'Cabin', sans-serif
+
+  h1, h2, h3, h4, h5, h6
+    font-family: 'Oswald', sans-serif
+    letter-spacing: 1px
+
+
+// Project Hero
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.project-hero
+  position: relative
+  margin-bottom: 8rem
+
+.project-meta
+  display: flex
+  justify-content: space-between
+  margin: 2rem 0 4.8rem 0
+  color: #96A1AF
+  font-size: 1.3rem
+  list-style-type: none
+
+  +medium
+    margin: 4rem 0 9.8rem 0
+
+.project-title
+  margin-bottom: 4rem
+  font-size: 9rem
+  letter-spacing: 1rem!important
+  text-transform: uppercase
+
+  +medium
+    font-size: 11rem
+
+.project-description
+  color: #96A1AF
+  font-size: 1.9rem
+
+.project-hero-image
+  width: 100%
+  height: 40rem
+  overflow: hidden
+
+  +medium
+    max-width: 50%
+    height: auto
+    margin: 0 auto
+
+// Project Section
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.project-section
+  position: relative
+  margin-bottom: 6rem
+
+  +medium
+    margin-bottom: 10rem
+
+.section-title
+  padding: 0 2rem 2rem 2rem
+
+  +medium
+    position: absolute
+    top: 0
+    left: 2rem
+    padding: 0
+    transform: translateX(-100%)
+
+    h3
+      text-align: right
+      transform: rotate(-90deg)
+      transform-origin: right top
+
+  h3
+    font-size: 1.5rem
+
+    text-transform: uppercase
+
+  span
+    color: #96A1AF
+
+// Project Color
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.project-color
+  .color-list
+    display: flex
+    justify-content: space-between
+
+    dd
+      margin: 1.4rem 0
+      color: #96A1AF
+      font-size: 1.3rem
+      text-align: center
+      text-transform: uppercase
+
+// Project Typography
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.project-typography
+  .font
+    position: relative
+    width: 100%
+    max-width: 40rem
+    margin: 0 auto
+
+    span
+      font-size: 6rem
+
+    h2
+      font-size: 3rem
+
+    &.cabin
+      h2
+        font-family: 'Cabin', sans-serif!important
+
+    &.oswald
+      span,
+      .font-dummy-text
+        font-family: 'Oswald', sans-serif
+
+  .font-use
+    color: #96A1AF
+
+  .font-gradient
+    position: absolute
+    top: 17rem
+    right: 0
+    bottom: 0
+    left: 0
+    background-image: linear-gradient(rgba(255,255,255, 0), rgba(255,255,255, 1));
+
+// Project Architecture
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.project-architecture
+
+  .architecture-list
+    list-style-type: none
+
+    li
+      width: 100%
+      max-width: 40rem
+
+      +medium
+        margin: 0 auto 8rem auto
+
+      &:last-child
+        margin-bottom: 0
+
+  .architecture-item-media
+    float: left
+    width: 5.5rem
+    height: 5.5rem
+    margin-right: 2rem
+    line-height: 5.5rem
+    text-align: center
+    background-color: #96A1AF
+    border-radius: 50%
+    box-shadow: 0 6px 17px 0 rgba(0,0,0, 0.18)
+
+  .architecture-item-content
+    overflow: hidden
+
+    h2
+      text-transform: uppercase
+
+    p
+      color: #96A1AF
+
+// Project UI
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.project-ui
+  .project-ui-shape
+    z-index: 10
+    position: absolute
+    top: 60rem
+    right: 0
+    bottom: auto
+    mix-blend-mode: multiply
+
+  .ui-list
+    list-style-type: none
+
+    li
+      width: 100%
+      max-width: 37.5rem
+      margin-bottom: 6rem
+      box-shadow: 0 43px 43px 0 rgba(0,0,0, 0.3), 0 2px 5px 0 rgba(0,0,0, 0.2), 0 13px 13px 0 rgba(0,0,0, 0.2)
+
+      +medium
+        margin: 0 auto 10rem auto
