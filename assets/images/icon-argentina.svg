@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="17px" viewBox="0 0 24 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-argentina</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Desktop-HD---Home-Copy-3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-260.000000, -34.000000)">
+        <g id="location" transform="translate(260.000000, 30.000000)">
+            <g id="icon-argentina" transform="translate(0.000000, 4.000000)">
+                <rect id="Rectangle" fill="#FFFFFF" x="0" y="0" width="24" height="17"></rect>
+                <ellipse id="Oval" fill="#F6B40F" cx="12" cy="8.5" rx="2.57142857" ry="2.55"></ellipse>
+                <rect id="Rectangle" fill="#85BAEA" x="0" y="0" width="24" height="5.1"></rect>
+                <rect id="Rectangle" fill="#85BAEA" x="0" y="11.9" width="24" height="5.1"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

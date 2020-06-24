@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="7px" viewBox="0 0 11 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>caret-up</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Desktop-HD---Home-Copy-4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-260.000000, -924.000000)">
+        <g id="Footer" transform="translate(260.000000, 918.000000)" fill="#FFFFFF">
+            <g id="Back-to-Top">
+                <path d="M10.0948661,11.3337054 C10.2220989,11.4609381 10.2857143,11.6116063 10.2857143,11.7857143 C10.2857143,11.9598223 10.2220989,12.1104904 10.0948661,12.2377232 C9.96763329,12.364956 9.81696516,12.4285714 9.64285714,12.4285714 L0.642857143,12.4285714 C0.468749129,12.4285714 0.318080993,12.364956 0.190848214,12.2377232 C0.0636154353,12.1104904 0,11.9598223 0,11.7857143 C0,11.6116063 0.0636154353,11.4609381 0.190848214,11.3337054 L4.69084821,6.83370536 C4.81808099,6.70647258 4.96874913,6.64285714 5.14285714,6.64285714 C5.31696516,6.64285714 5.46763329,6.70647258 5.59486607,6.83370536 L10.0948661,11.3337054 Z" id="caret-up"></path>
+            </g>
+        </g>
+    </g>
+</svg>
