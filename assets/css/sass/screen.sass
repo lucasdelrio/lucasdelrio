@@ -2,6 +2,8 @@
 // Variables
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
+$font-family-sans-serif: "Cabin", sans-serif;
+
 $color-border: rgba(0,0,0, 0.2)
 $color-gradient-light: #FE8C00
 $color-gradient-dark: #F83600
@@ -43,6 +45,225 @@ $color-linkedin: #0077B5
 @import Table
 @import Typography
 
+// Home
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.home
+  position: relative
+  color: #FFF
+  font-family: "Chivo", sans-serif
+  background-color: #000
+
+  h1, h2, h3, h4, h5, h6
+    font-family: "Chivo", sans-serif
+
+.home-wrapper
+  position: relative
+  max-width: 100%
+  padding: 2rem 0
+
+  +medium
+    margin-left: 20rem
+    padding: 3rem 0
+
+  .container
+    position: relative
+    z-index: 100
+
+.home-born,
+.home-interests
+  z-index: 10
+  display: none
+  color: #1F1F1F
+  font-weight: 700
+  line-height: 0.9
+  text-transform: uppercase
+
+  +medium
+    display: block
+    font-size: 12rem
+
+.home-born
+  +medium
+    position: absolute
+    top: -2rem
+    left: 2rem
+
+.home-interests
+  +medium
+    position: fixed
+    top: 50%
+    max-width: 82rem
+    padding-left: 2rem
+    transform: translateY(-38%)
+
+.home-made-in
+  display: inline-block
+  font-size: 1.4rem
+  +clearfix
+
+  img
+    float: left
+    margin-right: 1rem
+
+  span
+    float: left
+    margin-top: -0.2rem
+    line-height: 1.8rem
+    overflow: hidden
+
+.home-header
+  display: flex
+  align-items: center
+  margin-bottom: 2rem
+  padding: 2rem 2rem 0 2rem
+
+  +medium
+    flex-direction: column-reverse
+    position: fixed
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    width: 20rem
+    margin-bottom: 0
+    padding: 0
+
+.home-header-media
+  margin: 0 1.8rem 1rem 0
+
+  +medium
+    margin: 0 0 6rem 0
+
+.home-header-content
+  +medium
+    transform: rotate(-90deg)
+    margin-bottom: 6.8rem
+
+  .home-header-title
+    margin-bottom: 0
+    color: #FFF
+    font-size: 2.8rem
+    text-transform: none
+
+  .home-header-subtitle
+    margin-bottom: 1rem
+
+    +medium
+      margin-bottom: 0.4rem
+
+.home-social
+  +clearfix
+
+  +medium
+    float: right
+    display: inline-block
+
+  ul
+    list-style-type: none
+
+    +medium
+      float: right
+
+    li
+      float: left
+
+      &:not(:last-child)
+        margin-right: 3rem;
+
+.home-bio
+  position: relative
+  max-width: 72rem
+  font-size: 3.4rem
+  font-weight: 700
+
+  p
+    margin-bottom: 4rem
+
+.home-expertise
+  margin-bottom: 3rem
+  +clearfix
+
+  +medium
+    margin-bottom: 6rem
+
+  .home-expertise-title
+    margin-bottom: 0.4rem
+    color: #595959
+    font-weight: 400
+    text-transform: none
+
+  .home-expertise-list
+    display: flex
+    flex-direction: column
+
+    +medium
+      flex-direction: row
+
+      ul:first-child
+        margin-right: 6rem
+
+  ul
+    list-style-type: none
+    margin-bottom: 0
+    font-size: 3.4rem
+    font-weight: 700
+
+    li
+      margin-bottom: 0
+      line-height: 1.3
+
+.home-case-studies
+  .home-case-studies-title
+    margin-bottom: 0.4rem
+    color: #595959
+    font-weight: 400
+    text-transform: none
+
+  ul
+    list-style-type: none
+    display: flex
+    flex-direction: column
+
+    +medium
+      flex-direction: row
+
+  li
+    position: relative
+    width: 100%
+    height: 14rem
+    margin-bottom: 2rem
+    padding: 2rem
+    font-size: 1.4rem
+    text-transform: uppercase
+    background-color: #0A0A0A
+
+    +medium
+      max-width: 20rem
+      height: 24rem
+
+      &:not(:first-child)
+        margin-left: 4rem
+
+    a
+      position: absolute
+      top: 0
+      right: 0
+      bottom: 0
+      left: 0
+
+.home-back-to-top
+  color: #FFF
+  font-size: 1.4rem
+
+  img
+    margin-right: 0.8rem
+
+.home-copyright
+  color: #595959
+  font-size: 1.4rem
+  font-weight: 400
+
 .svg-wrap
   position: absolute
   top: 0
@@ -65,6 +286,26 @@ $color-linkedin: #0077B5
     font-family: 'Oswald', sans-serif
     letter-spacing: 1px
 
+// Talaris
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+#talaris
+  background-color: #121127;
+
+  h1, h2, h3, h4, h5, h6
+    color: #FFF
+
+  .project-hero
+    background: url(../../images/talaris/bg-hero.png) no-repeat center center
+
+  .project-hero-image
+    max-width: 42rem
+
+  .project-typography
+    color: #FFF
+
+    .font-gradient
+      background-image: linear-gradient(rgba(18,17,39, 0), rgba(18,17,39, 1))
 
 // Project Hero
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -96,6 +337,12 @@ $color-linkedin: #0077B5
 .project-description
   color: #96A1AF
   font-size: 1.9rem
+
+  br
+    display: none
+
+    +medium
+      display: block
 
 .project-hero-image
   width: 100%

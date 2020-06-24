@@ -11,7 +11,7 @@ html {
 body {
   margin: 0;
   color: #000;
-  font-family: 'Georgia', serif;
+  font-family: "Cabin", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
   letter-spacing: 0.01rem;
@@ -828,9 +828,9 @@ p {
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 2rem 0;
   color: black;
-  font-family: 'Playfair Display', 'Times New Roman', serif;
+  font-family: "Oswald", sans-serif;
   font-weight: 700;
-  text-transform: capitalize; }
+  text-transform: uppercase; }
 
 h1 {
   font-size: 4rem;
@@ -886,6 +886,221 @@ h1:hover a, h2:hover a, h3:hover a, h4:hover a, h5:hover a, h6:hover a {
   h6 {
     font-size: 2rem; } }
 
+.home {
+  position: relative;
+  color: #FFF;
+  font-family: "Chivo", sans-serif;
+  background-color: #000; }
+  .home h1, .home h2, .home h3, .home h4, .home h5, .home h6 {
+    font-family: "Chivo", sans-serif; }
+
+.home-wrapper {
+  position: relative;
+  max-width: 100%;
+  padding: 2rem 0; }
+  @media screen and (min-width: 480px) {
+    .home-wrapper {
+      margin-left: 20rem;
+      padding: 3rem 0; } }
+  .home-wrapper .container {
+    position: relative;
+    z-index: 100; }
+
+.home-born,
+.home-interests {
+  z-index: 10;
+  display: none;
+  color: #1F1F1F;
+  font-weight: 700;
+  line-height: 0.9;
+  text-transform: uppercase; }
+  @media screen and (min-width: 480px) {
+    .home-born,
+    .home-interests {
+      display: block;
+      font-size: 12rem; } }
+
+@media screen and (min-width: 480px) {
+  .home-born {
+    position: absolute;
+    top: -2rem;
+    left: 2rem; } }
+
+@media screen and (min-width: 480px) {
+  .home-interests {
+    position: fixed;
+    top: 50%;
+    max-width: 82rem;
+    padding-left: 2rem;
+    transform: translateY(-38%); } }
+
+.home-made-in {
+  display: inline-block;
+  font-size: 1.4rem;
+  *zoom: 1; }
+  .home-made-in:after, .home-made-in:before {
+    content: '';
+    display: table; }
+  .home-made-in:after {
+    clear: both; }
+  .home-made-in img {
+    float: left;
+    margin-right: 1rem; }
+  .home-made-in span {
+    float: left;
+    margin-top: -0.2rem;
+    line-height: 1.8rem;
+    overflow: hidden; }
+
+.home-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 2rem 2rem 0 2rem; }
+  @media screen and (min-width: 480px) {
+    .home-header {
+      flex-direction: column-reverse;
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 20rem;
+      margin-bottom: 0;
+      padding: 0; } }
+
+.home-header-media {
+  margin: 0 1.8rem 1rem 0; }
+  @media screen and (min-width: 480px) {
+    .home-header-media {
+      margin: 0 0 6rem 0; } }
+
+@media screen and (min-width: 480px) {
+  .home-header-content {
+    transform: rotate(-90deg);
+    margin-bottom: 6.8rem; } }
+
+.home-header-content .home-header-title {
+  margin-bottom: 0;
+  color: #FFF;
+  font-size: 2.8rem;
+  text-transform: none; }
+
+.home-header-content .home-header-subtitle {
+  margin-bottom: 1rem; }
+  @media screen and (min-width: 480px) {
+    .home-header-content .home-header-subtitle {
+      margin-bottom: 0.4rem; } }
+
+.home-social {
+  *zoom: 1; }
+  .home-social:after, .home-social:before {
+    content: '';
+    display: table; }
+  .home-social:after {
+    clear: both; }
+  @media screen and (min-width: 480px) {
+    .home-social {
+      float: right;
+      display: inline-block; } }
+  .home-social ul {
+    list-style-type: none; }
+    @media screen and (min-width: 480px) {
+      .home-social ul {
+        float: right; } }
+    .home-social ul li {
+      float: left; }
+      .home-social ul li:not(:last-child) {
+        margin-right: 3rem; }
+
+.home-bio {
+  position: relative;
+  max-width: 72rem;
+  font-size: 3.4rem;
+  font-weight: 700; }
+  .home-bio p {
+    margin-bottom: 4rem; }
+
+.home-expertise {
+  margin-bottom: 3rem;
+  *zoom: 1; }
+  .home-expertise:after, .home-expertise:before {
+    content: '';
+    display: table; }
+  .home-expertise:after {
+    clear: both; }
+  @media screen and (min-width: 480px) {
+    .home-expertise {
+      margin-bottom: 6rem; } }
+  .home-expertise .home-expertise-title {
+    margin-bottom: 0.4rem;
+    color: #595959;
+    font-weight: 400;
+    text-transform: none; }
+  .home-expertise .home-expertise-list {
+    display: flex;
+    flex-direction: column; }
+    @media screen and (min-width: 480px) {
+      .home-expertise .home-expertise-list {
+        flex-direction: row; }
+        .home-expertise .home-expertise-list ul:first-child {
+          margin-right: 6rem; } }
+  .home-expertise ul {
+    list-style-type: none;
+    margin-bottom: 0;
+    font-size: 3.4rem;
+    font-weight: 700; }
+    .home-expertise ul li {
+      margin-bottom: 0;
+      line-height: 1.3; }
+
+.home-case-studies .home-case-studies-title {
+  margin-bottom: 0.4rem;
+  color: #595959;
+  font-weight: 400;
+  text-transform: none; }
+
+.home-case-studies ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column; }
+  @media screen and (min-width: 480px) {
+    .home-case-studies ul {
+      flex-direction: row; } }
+
+.home-case-studies li {
+  position: relative;
+  width: 100%;
+  height: 14rem;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  background-color: #0A0A0A; }
+  @media screen and (min-width: 480px) {
+    .home-case-studies li {
+      max-width: 20rem;
+      height: 24rem; }
+      .home-case-studies li:not(:first-child) {
+        margin-left: 4rem; } }
+  .home-case-studies li a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; }
+
+.home-back-to-top {
+  color: #FFF;
+  font-size: 1.4rem; }
+  .home-back-to-top img {
+    margin-right: 0.8rem; }
+
+.home-copyright {
+  color: #595959;
+  font-size: 1.4rem;
+  font-weight: 400; }
+
 .svg-wrap {
   position: absolute;
   top: 0;
@@ -900,6 +1115,19 @@ h1:hover a, h2:hover a, h3:hover a, h4:hover a, h5:hover a, h6:hover a {
   #the-digital-jungle h1, #the-digital-jungle h2, #the-digital-jungle h3, #the-digital-jungle h4, #the-digital-jungle h5, #the-digital-jungle h6 {
     font-family: 'Oswald', sans-serif;
     letter-spacing: 1px; }
+
+#talaris {
+  background-color: #121127; }
+  #talaris h1, #talaris h2, #talaris h3, #talaris h4, #talaris h5, #talaris h6 {
+    color: #FFF; }
+  #talaris .project-hero {
+    background: url(../../images/talaris/bg-hero.png) no-repeat center center; }
+  #talaris .project-hero-image {
+    max-width: 42rem; }
+  #talaris .project-typography {
+    color: #FFF; }
+    #talaris .project-typography .font-gradient {
+      background-image: linear-gradient(rgba(18, 17, 39, 0), #121127); }
 
 .project-hero {
   position: relative;
@@ -928,6 +1156,11 @@ h1:hover a, h2:hover a, h3:hover a, h4:hover a, h5:hover a, h6:hover a {
 .project-description {
   color: #96A1AF;
   font-size: 1.9rem; }
+  .project-description br {
+    display: none; }
+    @media screen and (min-width: 480px) {
+      .project-description br {
+        display: block; } }
 
 .project-hero-image {
   width: 100%;
